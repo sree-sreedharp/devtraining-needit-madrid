@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.sp-tagline-color {&#13;
+	color: $sp-tagline-color;&#13;
+}&#13;
+h1 {&#13;
+  color:white;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,short_description</field_list>
+        <has_preview>false</has_preview>
+        <id>ibm-topic-search1</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>ibm_topic_search1</name>
+        <option_schema>[{"name":"typeahead_search","default_value":"{title: 'How can we help?', size: 'lg', color: 'default'}","label":"Typeahead Search","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[data.typeAheadSearch = $sp.getWidget('coretech-typeahead-search', options.typeahead_search);
+(function() {
+	var topic = $sp.getParameter('topic');
+	data.topicName = '';
+	
+	if(topic == 'Topic-AccountPass'){
+		data.topicName = 'Accounts & Passwords';
+	} else if(topic == 'Topic-Applications'){
+		data.topicName = 'Applications';
+	} else if(topic == 'Topic-EmailCalendar'){
+		data.topicName = 'Email & Calendar';
+	} else if(topic == 'Topic-DeskLapPer'){
+		data.topicName = 'Desktops, Laptops & Peripherals';
+	} else if(topic == 'Topic-NetworkPhone'){
+		data.topicName = 'Network, WiFi & Phones';
+	} else if(topic == 'Topic-Printing'){
+		data.topicName = 'Printing';
+	} else if(topic == 'Topic-Security'){
+		data.topicName = 'Security';
+	}
+ 
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-16 17:09:28</sys_created_on>
+        <sys_id>8638b4b7dbe2330065749d62ba9619fe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ibm_topic_search1</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sp_widget_8638b4b7dbe2330065749d62ba9619fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-16 17:11:27</sys_updated_on>
+        <template><![CDATA[<div id="homepage-search" class="hidden-xs wrapper-lg">
+  <div class="wrapper-lg">
+<h1 class="text-center hidden-xs text-4x m-b-lg">{{data.topicName}}</h1><h4 ng-if="${How can we help?}" class="text-center m-b-lg sp-tagline-color" ng-bind="${How can we help?}"></h4>
+  	<sp-widget widget="data.typeAheadSearch" />
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
