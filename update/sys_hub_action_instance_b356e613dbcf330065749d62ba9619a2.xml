@@ -4,7 +4,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
-        <comment>Set State to Awaiting Approval and assign to Beth Anglin</comment>
+        <comment>Set State to Awaiting Approval</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="NeedIt Fulfillment">7193ae5fdb8f330065749d62ba96190a</flow>
@@ -14,14 +14,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-08-09 08:22:49</sys_created_on>
         <sys_id>b356e613dbcf330065749d62ba9619a2</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_hub_action_instance_b356e613dbcf330065749d62ba9619a2</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-08-12 09:41:53</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-15 14:36:03</sys_updated_on>
         <ui_id>272a3e29-c129-4835-a0f0-c6da662ddcbb</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b356e613dbcf330065749d62ba9619a2"/>
@@ -75,10 +75,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-08-09 13:55:50</sys_created_on>
         <sys_id>8a923793db83730065749d62ba9619ad</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-08-09 13:55:50</sys_updated_on>
-        <value>state=14^assigned_to={"display":"Beth Anglin","value":"46d44a23a9fe19810012d100cca80666"}</value>
+        <sys_updated_on>2019-08-15 09:05:25</sys_updated_on>
+        <value>state=14</value>
         <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=b356e613dbcf330065749d62ba9619a2"/>
