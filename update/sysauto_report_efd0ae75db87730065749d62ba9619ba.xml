@@ -16,7 +16,7 @@
         <report display_value="NeedIt Requests by Type">19a669f9dbc3730065749d62ba961913</report>
         <report_body><![CDATA[<p><span class="ng-scope"><strong>Attached please find the daily NeedIt Requests by Type report</strong></span></p>]]></report_body>
         <report_title>Daily NeedIt Requests by Type report</report_title>
-        <run_as display_value="Sreedhar Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
